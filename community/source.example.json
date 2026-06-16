@@ -1,0 +1,21 @@
+{
+  "_comment": "Community source file. Fork Velaris-App-OS/Marketplace, copy this into community/<your-github-handle>/source.json, and point download_url at your hosted .hxapp. Your package is ALWAYS Community tier — tier is derived from the source URL's org + the official registry, never from this file. Open a PR; validate-pr checks schema + checksum + tags.",
+  "id": "your-handle/your-app",
+  "name": "Your App Name",
+  "description": "One-line description of what your app does.",
+  "type": "connector",
+  "category": "Integration",
+  "publisher": "Your Name or Org",
+  "price": "free",
+  "tags": ["example"],
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://your-host.example.com/your-app-1.0.0.hxapp",
+      "checksum_sha256": "sha256_of_your_hxapp",
+      "outbound_domains": ["api.your-service.example.com"],
+      "released_at": "2026-01-01",
+      "release_notes": "Initial release."
+    }
+  ]
+}

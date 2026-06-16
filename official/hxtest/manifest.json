@@ -1,0 +1,15 @@
+{
+  "_comment": "IN-BUNDLE manifest. This file lives at the root of hxtest-2.0.0.hxapp (a zip) and is validated by case_service.marketplace.checksum.parse_and_validate_manifest at download + promotion time. A module .hxapp carries NO executable backend code — the HxTest Python ships in the Velaris image (the trust model forbids loading in-process code from a package). Install only flips the in-image routes/UI on per tenant via marketplace_installs. The bundle is metadata (+ optional bundled DSL tests for Phase F).",
+  "manifest_version": 1,
+  "id": "velaris/hxtest",
+  "name": "HxTest",
+  "type": "module",
+  "version": "2.0.0",
+  "publisher": "Velaris",
+  "publisher_tier": "official",
+  "runtime": "python",
+  "ai_dependency": "optional",
+  "outbound_domains": [],
+  "min_platform_version": "2.0.0",
+  "description": "AI test layer for Velaris, built on the inbuilt Test Suite."
+}
