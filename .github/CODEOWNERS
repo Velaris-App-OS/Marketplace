@@ -1,0 +1,16 @@
+# Code owners for Velaris-App-OS/Marketplace
+# Owners are auto-requested for review; with branch protection set to
+# "Require review from Code Owners", a PR cannot merge without their approval.
+#
+# Adjust the team slug (@Velaris-App-OS/velaris-team) to your real GitHub team.
+
+# Official tier — Velaris team only. Every change here needs their approval.
+/official/                @UtpalBhadra93 @Velaris-App-OS/velaris-team
+
+# Repo-wide config also belongs to the Velaris team.
+/.github/                 @UtpalBhadra93 @Velaris-App-OS/velaris-team
+/README.md                @UtpalBhadra93 @Velaris-App-OS/velaris-team
+/push-official.sh         @UtpalBhadra93 @Velaris-App-OS/velaris-team
+
+# community/ intentionally has NO code owner — anyone may open a PR and a
+# maintainer merges it; no Velaris-team review is forced on community apps.
