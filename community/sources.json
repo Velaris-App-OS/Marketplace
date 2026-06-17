@@ -1,0 +1,4 @@
+{
+  "_comment": "COMMUNITY marketplace index. This is the file case-service polls for community apps: marketplace_community_index_url points here, _ensure_sources_seeded registers it as the 'Velaris Community' source, and _poll_source() reads the packages[] array into the marketplace_packages cache. To list an app, fork Velaris-App-OS/Marketplace and add one entry to packages[] (use source.example.json as the per-entry template), then open a PR. Tier is ALWAYS Community here — _effective_tier only grants Official to ids that are in official_registry.json AND served from the official/ folder, neither of which a community entry can claim. Start empty; entries are appended by PR.",
+  "packages": []
+}

@@ -1,5 +1,5 @@
 {
-  "_comment": "Community source file. Fork Velaris-App-OS/Marketplace, copy this into community/<your-github-handle>/source.json, and point download_url at your hosted .hxapp. Your package is ALWAYS Community tier — tier is derived from the source URL's org + the official registry, never from this file. Open a PR; validate-pr checks schema + checksum + tags.",
+  "_comment": "Per-entry template for a community app. The platform polls ONE file — community/sources.json — so to list your app: fork Velaris-App-OS/Marketplace, add ONE object like the one below (drop this _comment) to the packages[] array in community/sources.json, point download_url at your hosted .hxapp, and open a PR. Your package is ALWAYS Community tier — _effective_tier grants Official only to ids in official_registry.json served from the official/ folder, which a community entry cannot be; this file never decides tier. checksum_sha256 must be the sha256 of the exact .hxapp at download_url (verified at install).",
   "id": "your-handle/your-app",
   "name": "Your App Name",
   "description": "One-line description of what your app does.",
