@@ -1,0 +1,17 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+
+# Secrets — never commit; tier/trust never depends on repo contents anyway
+.env
+.env.*
+*.pem
+*.key
+push-official.sh
+
+# NOTE: *.hxapp is intentionally NOT ignored — the bundle is the distributable
+# and must be committed so raw.githubusercontent serves the exact bytes the
+# checksum was computed over.
