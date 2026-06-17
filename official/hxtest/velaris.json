@@ -1,5 +1,5 @@
 {
-  "_comment": "CATALOGUE manifest for the velaris-marketplace index. This is what a source URL serves and what case-service _poll_source() ingests into marketplace_packages. Tier is NOT trusted from here — it is derived from which org the source URL belongs to (_effective_tier). HxTest is official only because it is hosted in the velaris-marketplace org.",
+  "_comment": "CATALOGUE manifest (per-app record). The file actually polled by case-service is official/sources.json (the seeded official source URL); _poll_source() reads it and ingests packages into marketplace_packages. Keep this entry in sync with official/sources.json. Tier is NOT trusted from here — it is re-derived by _effective_tier: official requires source org velaris-app-os AND id in official_registry.json.",
   "id": "velaris/hxtest",
   "name": "HxTest",
   "description": "AI test layer for Velaris: scenario generation (HxNexus), live regeneration, rationale, the Studio HxTest page, and app-bundled test registration. Built on the inbuilt Test Suite. Installing it turns on /api/v1/hxtest and the Studio HxTest module for the tenant.",
@@ -11,12 +11,12 @@
   "icon_color": "#db2777",
   "icon_letter": "T",
   "min_platform_version": "2.0.0",
-  "latest_version": "2.0.0",
+  "latest_version": "1.0.0",
   "versions": [
     {
-      "version": "2.0.0",
-      "download_url": "https://github.com/velaris-marketplace/hxtest/releases/download/v2.0.0/hxtest-2.0.0.hxapp",
-      "checksum_sha256": "TODO_sha256_of_hxtest-2.0.0.hxapp",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/hxtest/hxtest-1.0.0.hxapp",
+      "checksum_sha256": "08db724286fa176aea916166c465027ce9604c111ab60385f8b8fd903ec356d8",
       "outbound_domains": [],
       "released_at": "2026-06-16",
       "release_notes": "Initial release. Marketplace AI layer on top of the inbuilt Test Suite."

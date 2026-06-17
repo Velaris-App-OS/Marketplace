@@ -45,8 +45,8 @@ tests). Install does not download or execute code; it writes the
 ## Building the `.hxapp`
 
 ```
-zip hxtest-2.0.0.hxapp manifest.json   # + any bundled DSL test files
-sha256sum hxtest-2.0.0.hxapp           # paste into velaris.json checksum_sha256
+zip hxtest-1.0.0.hxapp manifest.json   # + any bundled DSL test files
+sha256sum hxtest-1.0.0.hxapp           # paste into velaris.json checksum_sha256
 ```
 
 Then host the artifact (e.g. a GitHub release asset), point `download_url` at it,
