@@ -1,0 +1,15 @@
+{
+  "_comment": "IN-BUNDLE manifest. Lives at the root of hxcheckout-1.0.0.hxapp (a zip) and is validated by case_service.marketplace.checksum.parse_and_validate_manifest at download + promotion time. A module .hxapp carries NO executable backend code — the HxCheckout Python ships in the Velaris image (the trust model forbids loading in-process code from a package); the checkout_* tables ship on the normal migration track. Install only flips the in-image routes (/api/v1/checkout) + Studio module on per tenant via marketplace_installs.",
+  "manifest_version": 1,
+  "id": "velaris/hxcheckout",
+  "name": "HxCheckout",
+  "type": "module",
+  "version": "1.0.0",
+  "publisher": "Velaris",
+  "publisher_tier": "official",
+  "runtime": "python",
+  "ai_dependency": "none",
+  "outbound_domains": [],
+  "min_platform_version": "2.0.0",
+  "description": "Commerce integration layer — turns external baskets into Velaris Order cases."
+}

@@ -24,6 +24,54 @@
           "release_notes": "Initial release. Marketplace AI layer on top of the inbuilt Test Suite."
         }
       ]
+    },
+    {
+      "id": "velaris/hxcheckout",
+      "name": "HxCheckout",
+      "description": "Commerce integration layer: connect any existing website to Velaris. External baskets become Order cases that Velaris owns end-to-end (payment, fulfilment, delivery tracking, returns, complaints). Server-to-server API + HMAC webhook mode (Shopify/WooCommerce/Magento/BigCommerce). Installing it turns on /api/v1/checkout and the Studio HxCheckout module for the tenant.",
+      "type": "module",
+      "category": "Commerce",
+      "publisher": "Velaris",
+      "price": "free",
+      "tags": ["commerce", "orders", "checkout", "ecommerce", "official"],
+      "icon_color": "#db2777",
+      "icon_letter": "C",
+      "min_platform_version": "2.0.0",
+      "latest_version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/hxcheckout/hxcheckout-1.0.0.hxapp",
+          "checksum_sha256": "ccca7365e04b930789288a5154203661f2d9dc6db8dd54ea4a1cbee32faa27a6",
+          "outbound_domains": [],
+          "released_at": "2026-06-24",
+          "release_notes": "Initial release. Order intake API + HMAC webhook mode + Order case type + returns/complaints."
+        }
+      ]
+    },
+    {
+      "id": "velaris/hxstorefront",
+      "name": "HxStorefront",
+      "description": "Hosted store builder for Velaris clients with no existing website. Branded catalogue, theme + page builder, categories, inventory, promotions, SEO, and a public storefront at /store/:slug. Every purchase flows through HxCheckout to become an Order case. Installing it turns on /api/v1/storefront (+ the public storefront API) and the Studio HxStorefront module for the tenant.",
+      "type": "module",
+      "category": "Commerce",
+      "publisher": "Velaris",
+      "price": "free",
+      "tags": ["commerce", "storefront", "ecommerce", "store-builder", "official"],
+      "icon_color": "#db2777",
+      "icon_letter": "S",
+      "min_platform_version": "2.0.0",
+      "latest_version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/hxstorefront/hxstorefront-1.0.0.hxapp",
+          "checksum_sha256": "cafcd2213303539b4e467fc804176e90aebb29ec3c59b88a7ae981b8427d8b23",
+          "outbound_domains": [],
+          "released_at": "2026-06-24",
+          "release_notes": "Initial release. Store + catalogue + theme/page builder + inventory + promotions + media + public storefront + HxCheckout order bridge."
+        }
+      ]
     }
   ]
 }

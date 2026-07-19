@@ -1,0 +1,15 @@
+{
+  "_comment": "IN-BUNDLE manifest at the root of hxstorefront-1.0.0.hxapp (a zip), validated by case_service.marketplace.checksum.parse_and_validate_manifest. A module .hxapp carries NO executable backend code — the HxStorefront Python ships in the Velaris image; the storefront_* tables ship on the normal migration track (096). Install only flips the in-image routes (/api/v1/storefront + the public /api/v1/storefront/public routes) + the Studio module per tenant via marketplace_installs.",
+  "manifest_version": 1,
+  "id": "velaris/hxstorefront",
+  "name": "HxStorefront",
+  "type": "module",
+  "version": "1.0.0",
+  "publisher": "Velaris",
+  "publisher_tier": "official",
+  "runtime": "python",
+  "ai_dependency": "none",
+  "outbound_domains": [],
+  "min_platform_version": "2.0.0",
+  "description": "Hosted store builder — a Velaris-native storefront whose orders flow through HxCheckout."
+}

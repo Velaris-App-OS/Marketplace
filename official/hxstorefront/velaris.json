@@ -1,0 +1,25 @@
+{
+  "_comment": "CATALOGUE manifest. The file actually polled by case-service is official/sources.json; keep this entry in sync with it. Tier is re-derived by _effective_tier (org velaris-app-os AND under official/ AND id in official_registry.json), never trusted from here.",
+  "id": "velaris/hxstorefront",
+  "name": "HxStorefront",
+  "description": "Hosted store builder for Velaris clients with no existing website. Branded product catalogue, visual theme + page builder, categories, inventory, promotions, SEO, and a public storefront at /store/:slug — all from Studio. Every purchase flows through HxCheckout to become an Order case in Velaris. Installing it turns on /api/v1/storefront (+ the public storefront API) and the Studio HxStorefront module for the tenant.",
+  "type": "module",
+  "category": "Commerce",
+  "publisher": "Velaris",
+  "price": "free",
+  "tags": ["commerce", "storefront", "ecommerce", "store-builder", "official"],
+  "icon_color": "#db2777",
+  "icon_letter": "S",
+  "min_platform_version": "2.0.0",
+  "latest_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/hxstorefront/hxstorefront-1.0.0.hxapp",
+      "checksum_sha256": "cafcd2213303539b4e467fc804176e90aebb29ec3c59b88a7ae981b8427d8b23",
+      "outbound_domains": [],
+      "released_at": "2026-06-24",
+      "release_notes": "Initial release. Store + catalogue + theme/page builder + inventory + promotions + media + public storefront + HxCheckout order bridge."
+    }
+  ]
+}

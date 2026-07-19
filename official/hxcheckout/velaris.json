@@ -1,0 +1,25 @@
+{
+  "_comment": "CATALOGUE manifest (per-app record). The file actually polled by case-service is official/sources.json; _poll_source() reads it and ingests packages into marketplace_packages. Keep this entry in sync with official/sources.json. Tier is NOT trusted from here — it is re-derived by _effective_tier: official requires source org velaris-app-os AND under official/ AND id in official_registry.json.",
+  "id": "velaris/hxcheckout",
+  "name": "HxCheckout",
+  "description": "Commerce integration layer: connect any existing website to Velaris. External baskets POST to a public endpoint and become Order cases that Velaris owns end-to-end (payment via Stripe/HxConnect, fulfilment, delivery tracking, returns, complaints). Server-to-server API + HMAC webhook mode (Shopify/WooCommerce/Magento/BigCommerce). Installing it turns on /api/v1/checkout and the Studio HxCheckout module for the tenant.",
+  "type": "module",
+  "category": "Commerce",
+  "publisher": "Velaris",
+  "price": "free",
+  "tags": ["commerce", "orders", "checkout", "ecommerce", "official"],
+  "icon_color": "#db2777",
+  "icon_letter": "C",
+  "min_platform_version": "2.0.0",
+  "latest_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/hxcheckout/hxcheckout-1.0.0.hxapp",
+      "checksum_sha256": "ccca7365e04b930789288a5154203661f2d9dc6db8dd54ea4a1cbee32faa27a6",
+      "outbound_domains": [],
+      "released_at": "2026-06-24",
+      "release_notes": "Initial release. Order intake API + HMAC webhook mode + Order case type + returns/complaints."
+    }
+  ]
+}
