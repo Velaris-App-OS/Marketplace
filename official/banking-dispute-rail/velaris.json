@@ -1,0 +1,31 @@
+{
+  "_comment": "CATALOGUE manifest (per-app record). Keep in sync with official/sources.json.",
+  "id": "velaris/banking-dispute-rail",
+  "name": "Banking \u2014 Card Dispute Rep Desk",
+  "description": "A rep-desk rail for card disputes: evidence request first, a Full-verified caller before anything is promised, and a follow-up that reminds the rep of the chargeback clock.",
+  "type": "accelerator_pack",
+  "category": "Banking",
+  "publisher": "Velaris",
+  "price": "free",
+  "tags": [
+    "banking",
+    "disputes",
+    "rep-desk",
+    "customer-engagement",
+    "official"
+  ],
+  "icon_color": "#0ea5e9",
+  "icon_letter": "B",
+  "min_platform_version": "3.0.0",
+  "latest_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/banking-dispute-rail/banking-dispute-rail-1.0.0.hxapp",
+      "checksum_sha256": "a1b05c366e39fa597a47e65d78d07d7457348078d4d436795ee456a5a6c5285b",
+      "outbound_domains": [],
+      "released_at": "2026-09-29",
+      "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
+    }
+  ]
+}

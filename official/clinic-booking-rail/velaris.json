@@ -1,0 +1,31 @@
+{
+  "_comment": "CATALOGUE manifest (per-app record). Keep in sync with official/sources.json.",
+  "id": "velaris/clinic-booking-rail",
+  "name": "Healthcare \u2014 Clinic Booking Rep Desk",
+  "description": "A rep-desk rail for clinic bookings: booking first, forms before the visit, and nothing clinical sent to a caller who is not Full-verified.",
+  "type": "accelerator_pack",
+  "category": "Healthcare",
+  "publisher": "Velaris",
+  "price": "free",
+  "tags": [
+    "healthcare",
+    "booking",
+    "rep-desk",
+    "customer-engagement",
+    "official"
+  ],
+  "icon_color": "#10b981",
+  "icon_letter": "H",
+  "min_platform_version": "3.0.0",
+  "latest_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/clinic-booking-rail/clinic-booking-rail-1.0.0.hxapp",
+      "checksum_sha256": "c60ae5f91bf527e445f50998530f4234ae35df355f33739bf4450d70da812a3a",
+      "outbound_domains": [],
+      "released_at": "2026-09-29",
+      "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
+    }
+  ]
+}

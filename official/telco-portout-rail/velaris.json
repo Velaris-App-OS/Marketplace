@@ -1,0 +1,31 @@
+{
+  "_comment": "CATALOGUE manifest (per-app record). Keep in sync with official/sources.json.",
+  "id": "velaris/telco-portout-rail",
+  "name": "Telco \u2014 Number Port-Out Rep Desk",
+  "description": "A rep-desk rail for port-out requests: identity first, a documented reason, and any final-bill payment taken only from a Full-verified caller.",
+  "type": "accelerator_pack",
+  "category": "Telecoms",
+  "publisher": "Velaris",
+  "price": "free",
+  "tags": [
+    "telco",
+    "port-out",
+    "rep-desk",
+    "customer-engagement",
+    "official"
+  ],
+  "icon_color": "#8b5cf6",
+  "icon_letter": "P",
+  "min_platform_version": "3.0.0",
+  "latest_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/telco-portout-rail/telco-portout-rail-1.0.0.hxapp",
+      "checksum_sha256": "4ebcad1cfe6baeb25b674acda8350fa571322b1ac79d889863d54c3c03c8d533",
+      "outbound_domains": [],
+      "released_at": "2026-09-29",
+      "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
+    }
+  ]
+}

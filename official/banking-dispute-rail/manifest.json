@@ -1,0 +1,13 @@
+{
+  "id": "velaris/banking-dispute-rail",
+  "name": "Banking \u2014 Card Dispute Rep Desk",
+  "version": "1.0.0",
+  "type": "accelerator_pack",
+  "publisher": "Velaris",
+  "publisher_tier": "official",
+  "outbound_domains": [],
+  "manifest_version": 1,
+  "runtime": "python",
+  "description": "A rep-desk rail for card disputes: evidence request first, a Full-verified caller before anything is promised, and a follow-up that reminds the rep of the chargeback clock.",
+  "_comment": "IN-BUNDLE manifest (copy). The authoritative copy is inside the .hxapp; an accelerator_pack carries configuration only (engage_rails.json), validated at install by case_service.engage.rail_config."
+}

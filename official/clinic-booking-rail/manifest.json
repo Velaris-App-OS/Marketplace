@@ -1,0 +1,13 @@
+{
+  "id": "velaris/clinic-booking-rail",
+  "name": "Healthcare \u2014 Clinic Booking Rep Desk",
+  "version": "1.0.0",
+  "type": "accelerator_pack",
+  "publisher": "Velaris",
+  "publisher_tier": "official",
+  "outbound_domains": [],
+  "manifest_version": 1,
+  "runtime": "python",
+  "description": "A rep-desk rail for clinic bookings: booking first, forms before the visit, and nothing clinical sent to a caller who is not Full-verified.",
+  "_comment": "IN-BUNDLE manifest (copy). The authoritative copy is inside the .hxapp; an accelerator_pack carries configuration only (engage_rails.json), validated at install by case_service.engage.rail_config."
+}

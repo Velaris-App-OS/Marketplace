@@ -1,5 +1,5 @@
 {
-  "_comment": "OFFICIAL marketplace index. This is the file case-service actually polls: marketplace_index_url points here, _ensure_sources_seeded registers it as the 'Velaris Official' source, and _poll_source() reads the packages[] array below into the marketplace_packages cache. Each entry must stay in sync with that app's official/<app>/velaris.json. Tier is never trusted from this file — _effective_tier re-derives it (source org velaris-app-os + under official/ + id in official_registry.json).",
+  "_comment": "OFFICIAL marketplace index. This is the file case-service actually polls: marketplace_index_url points here, _ensure_sources_seeded registers it as the 'Velaris Official' source, and _poll_source() reads the packages[] array below into the marketplace_packages cache. Each entry must stay in sync with that app's official/<app>/velaris.json. Tier is never trusted from this file \u2014 _effective_tier re-derives it (source org velaris-app-os + under official/ + id in official_registry.json).",
   "packages": [
     {
       "id": "velaris/hxtest",
@@ -9,7 +9,13 @@
       "category": "AI & Intelligence",
       "publisher": "Velaris",
       "price": "free",
-      "tags": ["testing", "ai", "quality", "conformance", "official"],
+      "tags": [
+        "testing",
+        "ai",
+        "quality",
+        "conformance",
+        "official"
+      ],
       "icon_color": "#db2777",
       "icon_letter": "T",
       "min_platform_version": "2.0.0",
@@ -33,7 +39,13 @@
       "category": "Commerce",
       "publisher": "Velaris",
       "price": "free",
-      "tags": ["commerce", "orders", "checkout", "ecommerce", "official"],
+      "tags": [
+        "commerce",
+        "orders",
+        "checkout",
+        "ecommerce",
+        "official"
+      ],
       "icon_color": "#db2777",
       "icon_letter": "C",
       "min_platform_version": "2.0.0",
@@ -57,7 +69,13 @@
       "category": "Commerce",
       "publisher": "Velaris",
       "price": "free",
-      "tags": ["commerce", "storefront", "ecommerce", "store-builder", "official"],
+      "tags": [
+        "commerce",
+        "storefront",
+        "ecommerce",
+        "store-builder",
+        "official"
+      ],
       "icon_color": "#db2777",
       "icon_letter": "S",
       "min_platform_version": "2.0.0",
@@ -70,6 +88,96 @@
           "outbound_domains": [],
           "released_at": "2026-06-24",
           "release_notes": "Initial release. Store + catalogue + theme/page builder + inventory + promotions + media + public storefront + HxCheckout order bridge."
+        }
+      ]
+    },
+    {
+      "id": "velaris/banking-dispute-rail",
+      "name": "Banking \u2014 Card Dispute Rep Desk",
+      "description": "A rep-desk rail for card disputes: evidence request first, a Full-verified caller before anything is promised, and a follow-up that reminds the rep of the chargeback clock.",
+      "type": "accelerator_pack",
+      "category": "Banking",
+      "publisher": "Velaris",
+      "price": "free",
+      "tags": [
+        "banking",
+        "disputes",
+        "rep-desk",
+        "customer-engagement",
+        "official"
+      ],
+      "icon_color": "#0ea5e9",
+      "icon_letter": "B",
+      "min_platform_version": "3.0.0",
+      "latest_version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/banking-dispute-rail/banking-dispute-rail-1.0.0.hxapp",
+          "checksum_sha256": "a1b05c366e39fa597a47e65d78d07d7457348078d4d436795ee456a5a6c5285b",
+          "outbound_domains": [],
+          "released_at": "2026-09-29",
+          "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
+        }
+      ]
+    },
+    {
+      "id": "velaris/telco-portout-rail",
+      "name": "Telco \u2014 Number Port-Out Rep Desk",
+      "description": "A rep-desk rail for port-out requests: identity first, a documented reason, and any final-bill payment taken only from a Full-verified caller.",
+      "type": "accelerator_pack",
+      "category": "Telecoms",
+      "publisher": "Velaris",
+      "price": "free",
+      "tags": [
+        "telco",
+        "port-out",
+        "rep-desk",
+        "customer-engagement",
+        "official"
+      ],
+      "icon_color": "#8b5cf6",
+      "icon_letter": "P",
+      "min_platform_version": "3.0.0",
+      "latest_version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/telco-portout-rail/telco-portout-rail-1.0.0.hxapp",
+          "checksum_sha256": "4ebcad1cfe6baeb25b674acda8350fa571322b1ac79d889863d54c3c03c8d533",
+          "outbound_domains": [],
+          "released_at": "2026-09-29",
+          "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
+        }
+      ]
+    },
+    {
+      "id": "velaris/clinic-booking-rail",
+      "name": "Healthcare \u2014 Clinic Booking Rep Desk",
+      "description": "A rep-desk rail for clinic bookings: booking first, forms before the visit, and nothing clinical sent to a caller who is not Full-verified.",
+      "type": "accelerator_pack",
+      "category": "Healthcare",
+      "publisher": "Velaris",
+      "price": "free",
+      "tags": [
+        "healthcare",
+        "booking",
+        "rep-desk",
+        "customer-engagement",
+        "official"
+      ],
+      "icon_color": "#10b981",
+      "icon_letter": "H",
+      "min_platform_version": "3.0.0",
+      "latest_version": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "download_url": "https://raw.githubusercontent.com/Velaris-App-OS/Marketplace/main/official/clinic-booking-rail/clinic-booking-rail-1.0.0.hxapp",
+          "checksum_sha256": "c60ae5f91bf527e445f50998530f4234ae35df355f33739bf4450d70da812a3a",
+          "outbound_domains": [],
+          "released_at": "2026-09-29",
+          "release_notes": "Initial release. An industry action rail for the Rep Desk (Customer Engagement)."
         }
       ]
     }
